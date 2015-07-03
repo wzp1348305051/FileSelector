@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 自定义header背景色 -->
+    <color name="bg_head">#FF0F4AAA</color>
+    <!-- 灰色背景 -->
+    <color name="bg_grey">#FFE5E5E5</color>
+    <!-- 白色背景 -->
+    <color name="bg_white">#FFFFFFFF</color>
+    <!-- 分格线背景色 -->
+    <color name="bg_divider_line">#FFD4D4D4</color>
+    
+    
+    
+</resources>

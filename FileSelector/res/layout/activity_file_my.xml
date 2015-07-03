@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_file_my_head"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_head" >
+        
+        <ImageView
+            android:id="@+id/iv_file_my_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/iv_back_bg" />
+        
+        <TextView
+        	android:id="@+id/tv_file_my_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/iv_file_my_back"
+            android:gravity="center"
+            android:textColor="@color/bg_white"
+            android:textSize="20sp" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_file_my_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_grey"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:id="@+id/tv_file_my_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_file_my_ok"
+            android:layout_width="56dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/bg_white"
+            android:textSize="16sp"
+            android:text="发送" />
+        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_file_my_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_file_my_head"
+        android:layout_above="@+id/rl_file_my_bottom"
+        android:divider="@null" />
+    
+    <TextView
+        android:id="@+id/tv_file_my_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/ic_tip"
+        android:textColor="@color/bg_grey"
+        android:textSize="18sp"
+        android:text="当前暂无文件"
+        android:visibility="invisible" />
+
+</RelativeLayout>
